@@ -49,5 +49,29 @@
         URL"
       </p>
     </section>
+    <section>
+      <h2>.gitignore y .DS_Store</h2>
+      <strong>¿Que es?</strong>
+      <p>
+        .gitignore, es un archivo de texto que le dice a Git que archivos o
+        directorios debe ignorar en el repositorio, es decir, qué archivos no
+        deben ser rastreados, versionados o incluidos en los commits.
+      </p>
+      <strong>¿Como se usa?</strong>
+      <ol>
+        <li>Se agrega al documento (touch .gitignore)</li>
+        <li>Adentrarse al documento</li>
+        <li>Mencionar lo que se va a ignorar</li>
+      </ol>
+      <strong>Cosas a recordar</strong>
+      <ul>
+        <li>
+          *.log (se puede usar para ignorar todos los archivos con la
+          terminacion .log)
+        </li>
+      </ul>
+      <strong>Comandos clave</strong>
+      <p>find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch</p>
+    </section>
   </body>
 </html>
